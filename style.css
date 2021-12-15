@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
+h2 {
+    margin: 0;
+    padding: 20px 0;
+}
+
+.container {
+    width: 400px;
+    margin: 0 auto;
+    background: gray;
+    text-align: center;
+    height: 600px;
+
+    position: relative;
+}
+
+.screen {
+    width: 80%;
+    height: 150px;
+}
+
+.atm-body {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+}
+
+
+.card-img {
+    width: 100px;
+    height: 200px;
+    padding-top: 10px;
+}
+
+button {
+    width: 50px;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 20px;
+
+}
+button:hover {
+    font-size: 24px;
+    padding: 10px;
+    background: rgb(163, 155, 155);
+}
+.card-img:hover {
+    margin-top: -20px;
+
+}
+
+.card-img.active {
+    display: none;
+}
+
+#money {
+    margin: 0 35%;
+    width: 400px;
+    height: 30px;
+}
+

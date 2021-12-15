@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ATM</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>ATM</h2>
+            <input id="screen" type="text" class="screen" disabled>
+        </div>
+        <div class="atm-body">
+            <div class="keyboard">
+                <div class="numbers">
+                    <button onclick="press_number(1)">1</button>
+                    <button onclick="press_number(2)">2</button>
+                    <button onclick="press_number(3)">3</button>
+                </div>
+                <div class="numbers">
+                    <button onclick="press_number(4)">4</button>
+                    <button onclick="press_number(5)">5</button>
+                    <button onclick="press_number(6)">6</button>
+                </div>
+                <div class="numbers">
+                    <button onclick="press_number(7)">7</button>
+                    <button onclick="press_number(8)">8</button>
+                    <button onclick="press_number(9)">9</button>
+                </div>
+                <div class="numbers">
+                    <button onclick="delete_value()">d</button>
+                    <button onclick="press_number(0)">0</button>
+                    <button onclick="enter_pin()">ok</button>
+                </div>
+            </div>
+            <div class="card_insert">
+                <hr width="130" size="20" color="black">
+                <img id="card-img" class="card-img" src="visa.png" onclick="card_insert()" alt="visa card">
+            </div>
+        </div>
+    </div>
+    <input id="money" type="text" disabled>
+    <script src="script.js"></script>
+</body>
+</html>
